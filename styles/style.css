@@ -1,4 +1,58 @@
 :root{ /* The highest level of your document (the "Master Panel"). */
     --background-color: #04141d; /* variable must have two dashes */
-    
+    --background-color-dark: #030d15;
+    --card-color: rgba(7, 28, 39, 0.88);
+    --card-color-light: rgba(10, 38, 53, 0.92);
+    --line-color: rgba(113, 187, 223, 0.16);
+    --text-color: #e9f4ff;
+    --muted-text-color: #9bb2c4;
+    --accent-color: #52d1ff;
+    --accent-color-soft: #6bdcff;
+    --button-text-color: #02222f;
+    --shadow-color: rgba(0, 0, 0, 0.35);
+    --font-main: "Manrope", sans-serif;
+    --border-radius-large: 28px;
+    --border-radius-medium: 20px;
+    --border-radius-small: 14px;
+    --container-width: 1180px;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    color:var(--text-color);
+    background:
+        radial-gradient(circle at top right, rgba(18, 81, 110, 0.35), transparent 26%),
+        radial-gradient(circle at bottom left, rgba(10, 90, 136, 0.16), transparent 24%),
+        linear-gradient(180deg, #03111b 0%, #04141d 100%);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+.container {
+    width: min(calc(100% - 40px), var(--container-width));
+    margin: 0 auto;
+}
+
